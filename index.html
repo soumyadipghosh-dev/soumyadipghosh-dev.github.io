@@ -8,83 +8,138 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">Soumyadip</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
+    <!-- HEADER -->
+    <header class="hero">
         <div class="hero-text">
-            <h1>Hello, I'm <span>Soumyadip</span></h1>
-            <p>A passionate Full-Stack Developer specializing in .NET & modern web technologies.</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <h1>I'm Soumyadip</h1>
+            <h2>Full Stack Developer</h2>
+            <p class="desc">
+                Experienced Full Stack Developer skilled in .NET, SQL, MVC,  
+                dashboards, REST APIs, and enterprise-grade applications.
+            </p>
+
+            <div class="stats">
+                <div><span>4+</span><p>Years Experience</p></div>
+                <div><span>12+</span><p>Major Projects</p></div>
+                <div><span>10+</span><p>Clients Served</p></div>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a dedicated developer who loves building clean & efficient applications.
-            I work with .NET, MSSQL, JavaScript, APIs and modern UI frameworks.
-            My passion is solving real business problems through technology.
-        </p>
-    </section>
+    <div class="container">
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">.NET Core</div>
-            <div class="skill">C#</div>
-            <div class="skill">SQL Server</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">HTML / CSS</div>
-            <div class="skill">API Development</div>
-        </div>
-    </section>
+        <!-- ABOUT -->
+        <section class="section">
+            <h3 class="section-tag">( 01 )</h3>
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I specialize in building scalable enterprise applications with .NET Core,  
+                SQL Server, PostgreSQL, REST APIs, Authentication systems, dashboards  
+                and high-performance backend systems. I love solving complex workflow  
+                problems and converting business logic into clean architecture.
+            </p>
+        </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <!-- EXPERIENCE -->
+        <section class="section">
+            <h3 class="section-tag">( 02 )</h3>
+            <h2 class="section-title">Experience</h2>
 
-        <div class="project-card">
-            <h3>Invoice Management System</h3>
-            <p>Full invoice module with client management, GST, PDF export, and reports.</p>
-        </div>
+            <div class="exp-card">
+                <div class="year">2025</div>
+                <h3>Full Stack Developer — Tekknowledge Analytics</h3>
+                <p>Fulltime</p>
+                <ul>
+                    <li>HRMS module development using .NET Core & SQL Server.</li>
+                    <li>REST API integrations + performance optimization.</li>
+                </ul>
+            </div>
 
-        <div class="project-card">
-            <h3>Inventory & Accounts System</h3>
-            <p>Stock management, purchase/sales, ledgers & full accounts automation.</p>
-        </div>
+            <div class="exp-card">
+                <div class="year">2024</div>
+                <h3>Full Stack Developer — Khadim India Ltd</h3>
+                <p>Fulltime</p>
+                <ul>
+                    <li>Factory Management System & Reporting Application.</li>
+                    <li>RBAC, dashboards, SQL optimization.</li>
+                </ul>
+            </div>
 
-        <div class="project-card">
-            <h3>Custom CRM for Businesses</h3>
-            <p>Lead management, follow-up tracking, reports & automation.</p>
-        </div>
-    </section>
+            <div class="exp-card">
+                <div class="year">2022–23</div>
+                <h3>Backend Developer — Technocon Services</h3>
+                <p>Fulltime</p>
+                <ul>
+                    <li>Logistics Management System using .NET MVC + PostgreSQL.</li>
+                    <li>APIs, authentication, Google Map API, CI/CD.</li>
+                </ul>
+            </div>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>📧 Email: your@email.com</p>
-        <p>📱 Phone: +91 XXXXXXXXXX</p>
-        <p>🌐 LinkedIn / GitHub Links</p>
-    </section>
+        </section>
+
+        <!-- EDUCATION & SKILLS -->
+        <section class="section">
+            <h3 class="section-tag">( 03 )</h3>
+            <h2 class="section-title">Education & Skills</h2>
+
+            <div class="edu-skill">
+
+                <div class="edu">
+                    <h4>BCA — Vidyasagar University</h4>
+                    <p>2018 – 2021</p>
+
+                    <h4>Higher Secondary — Salboni High School</h4>
+                    <p>2017 – 2018</p>
+                </div>
+
+                <div class="skills">
+                    <span>.NET Core</span>
+                    <span>ASP.NET MVC</span>
+                    <span>SQL Server</span>
+                    <span>PostgreSQL</span>
+                    <span>JavaScript</span>
+                    <span>jQuery</span>
+                    <span>Bootstrap</span>
+                    <span>REST API</span>
+                    <span>Git</span>
+                    <span>WordPress</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WORKS WITHOUT IMAGES -->
+        <section class="section">
+            <h3 class="section-tag">( 04 )</h3>
+            <h2 class="section-title">Latest Works</h2>
+
+            <div class="work-card">
+                <h3>HRMS System</h3>
+                <p>Employee management, payroll & reporting.</p>
+            </div>
+
+            <div class="work-card">
+                <h3>Factory Management System</h3>
+                <p>Production, QC, menus, RBAC.</p>
+            </div>
+
+            <div class="work-card">
+                <h3>Logistics Management System</h3>
+                <p>Routes, vehicles, API integration.</p>
+            </div>
+
+            <div class="work-card">
+                <h3>Reporting System</h3>
+                <p>RDLC reports, automation, dashboards.</p>
+            </div>
+
+        </section>
+
+    </div>
 
     <footer>
-        <p>© 2025 Soumyadip Ghosh • All Rights Reserved</p>
+        © 2025 Soumyadip Ghosh — Portfolio
     </footer>
 
-    <script src="script.js"></script>
 </body>
-</html>
+                                                                              </html>
