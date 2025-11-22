@@ -1,136 +1,131 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    background: #f7f7f7;
-    color: #222;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+    color: #111;
 }
 
-/* NAVBAR */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px 25px;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    z-index: 100;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
-}
-
-.menu-btn {
-    display: none;
-    font-size: 26px;
-}
-
-/* HERO SECTION */
+/* HERO */
 .hero {
-    height: 100vh;
-    background: linear-gradient(to right, #007BFF, #00A8FF);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    color: white;
-}
-
-.hero h1 span {
-    color: #ffeb3b;
-}
-
-.btn {
-    display: inline-block;
+    padding: 60px 20px;
     background: #fff;
-    color: #007bff;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 15px;
-    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+    color: #fe7f2d;
+    margin-top: -10px;
+}
+
+.desc {
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.stats {
+    margin-top: 25px;
+    display: flex;
+    gap: 30px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats div span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fe7f2d;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
 }
 
 /* SECTIONS */
-section {
-    padding: 70px 20px;
-    text-align: center;
+.section {
+    margin-top: 50px;
 }
 
-h2 {
-    margin-bottom: 20px;
+.section-tag {
+    color: #fe7f2d;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
-/* SKILLS */
-.skills-container {
+.section-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* EXPERIENCE CARDS */
+.exp-card {
+    border-left: 4px solid #fe7f2d;
+    padding: 15px 20px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.exp-card .year {
+    color: #fe7f2d;
+    font-weight: 600;
+}
+
+/* EDUCATION + SKILLS */
+.edu-skill {
     display: flex;
+    gap: 40px;
     flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
 }
 
-.skill {
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
+.skills span {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #f0f0f0;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 14px;
 }
 
-/* PROJECTS */
-.project-card {
-    background: white;
+/* WORKS STYLE WITHOUT IMAGES */
+.work-card {
+    background: #fff;
     padding: 20px;
-    margin: 15px auto;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-
-/* CONTACT */
-.contact p {
-    font-size: 18px;
-    margin: 8px 0;
+    border-radius: 6px;
+    margin: 15px 0;
+    border-left: 4px solid #fe7f2d;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #222;
-    color: white;
+    margin-top: 40px;
+    background: #eee;
 }
 
-/* MOBILE MENU */
-@media (max-width: 768px) {
-    .nav-links { 
-        display: none;
+/* MOBILE */
+@media (max-width: 600px) {
+    .stats {
         flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        padding: 15px;
-        box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+        gap: 10px;
+        text-align: left;
     }
 
-    .menu-btn {
-        display: block;
+    .edu-skill {
+        flex-direction: column;
     }
 }
