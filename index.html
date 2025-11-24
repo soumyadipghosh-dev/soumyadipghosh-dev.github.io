@@ -1,164 +1,964 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="title" content="Soumyadip Ghosh | Full Stack Developer (.NET, SQL, MVC)">
-<meta name="description" content="Full Stack Developer skilled in .NET Core, SQL Server, MVC, REST API, Dashboard UI, Role-Based Authentication, and Enterprise Applications.">
-<meta name="keywords" content="Soumyadip Ghosh, Full Stack Developer, .NET Developer, SQL Developer, ASP.NET, MVC, REST API, Kolkata Developer, Backend Developer">
-<meta name="author" content="Soumyadip Ghosh">
+    <!-- BASIC SEO -->
+    <meta charset="UTF-8" />
+    <title>Soumyadip Ghosh | Full Stack .NET Developer in Kolkata</title>
+    <meta name="description" content="Soumyadip Ghosh is a Full Stack .NET Developer from Kolkata, skilled in .NET Core, ASP.NET MVC, SQL Server, PostgreSQL, REST APIs, dashboards, and enterprise applications." />
+    <meta name="keywords" content="Soumyadip Ghosh, Full Stack Developer, .NET Developer, ASP.NET, SQL Server, MVC Developer, Kolkata Developer, Backend Developer, Web Developer" />
+    <meta name="author" content="Soumyadip Ghosh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Open Graph for Social Media -->
-<meta property="og:title" content="Soumyadip Ghosh | Full Stack Developer">
-<meta property="og:description" content="Full Stack Developer specializing in .NET Core, SQL Server, MVC, API Integration, Dashboards, and Enterprise Systems.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://soumyadipghosh-dev.github.io">
-<meta property="og:image" content="your-image-link.jpg">
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://soumyadipghosh-dev.github.io" />
 
-<!-- Mobile Friendly -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OPEN GRAPH (SOCIAL SHARE) -->
+    <meta property="og:title" content="Soumyadip Ghosh | Full Stack .NET Developer" />
+    <meta property="og:description" content="Full Stack Developer specializing in .NET Core, ASP.NET MVC, SQL Server, PostgreSQL, REST APIs, dashboards and reporting systems." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://soumyadipghosh-dev.github.io" />
+    <!-- You can host an image later and put its URL here -->
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Soumyadip+Ghosh+Portfolio" />
 
-<!-- Canonical URL -->
-<link rel="canonical" href="https://soumyadipghosh-dev.github.io">
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Soumyadip Ghosh | Full Stack .NET Developer" />
+    <meta name="twitter:description" content="Full Stack .NET Developer from Kolkata with experience in HRMS, Logistics, Factory Management, and Reporting systems." />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <!-- STRUCTURED DATA (SCHEMA.ORG) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Soumyadip Ghosh",
+      "jobTitle": "Full Stack .NET Developer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kolkata",
+        "addressRegion": "West Bengal",
+        "addressCountry": "IN"
+      },
+      "email": "mailto:soumyadipghosh640@gmail.com",
+      "telephone": "+91-7063067244",
+      "url": "https://soumyadipghosh-dev.github.io"
+    }
+    </script>
+
+    <!-- FONT & GLOBAL STYLES -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --bg: #050816;
+            --bg-alt: #0b1020;
+            --accent: #ff7a3c;
+            --accent-soft: rgba(255, 122, 60, 0.12);
+            --text: #f5f5f5;
+            --muted: #a0a3b1;
+            --card: #101527;
+            --border: #20263b;
+            --shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+            --radius-lg: 18px;
+            --radius-md: 12px;
+            --transition: 0.25s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: radial-gradient(circle at top, #151b3b 0, #050816 50%, #02030a 100%);
+            color: var(--text);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* NAVBAR */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(18px);
+            background: linear-gradient(to right, rgba(5, 8, 22, 0.96), rgba(5, 8, 22, 0.82));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 20%, #ffe9d6 0, #ff7a3c 40%, #c03522 85%);
+            box-shadow: 0 0 15px rgba(255, 122, 60, 0.8);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .brand-text span:first-child {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .brand-text span:last-child {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: var(--muted);
+            padding: 6px 10px;
+            border-radius: 999px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+            background: rgba(255, 122, 60, 0.15);
+        }
+
+        .nav-cta {
+            border-radius: 999px;
+            padding: 7px 14px;
+            font-size: 13px;
+            background: linear-gradient(135deg, #ff7a3c, #ffb347);
+            color: #050816;
+            font-weight: 600;
+            box-shadow: 0 0 18px rgba(255, 122, 60, 0.5);
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        /* LAYOUT */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 18px 16px 40px;
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        .section-sub {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        /* HERO */
+        .hero {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 28px;
+            align-items: center;
+            padding: 22px 18px;
+            border-radius: 22px;
+            background: radial-gradient(circle at top left, rgba(255, 122, 60, 0.25), transparent 55%),
+                        radial-gradient(circle at bottom right, rgba(76, 130, 255, 0.20), transparent 50%),
+                        linear-gradient(135deg, #070b1a, #11172a);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .hero-heading {
+            font-size: 26px;
+            margin-bottom: 4px;
+        }
+
+        .hero-heading span {
+            color: var(--accent);
+        }
+
+        .hero-role {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        .hero-text {
+            font-size: 13px;
+            color: #d2d4e3;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .tag-pill {
+            font-size: 11px;
+            padding: 5px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(10, 14, 35, 0.6);
+            color: #e7e9ff;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            border-radius: 999px;
+            padding: 8px 18px;
+            font-size: 13px;
+            background: linear-gradient(135deg, #ff7a3c, #ffb347);
+            color: #050816;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 18px rgba(255, 122, 60, 0.5);
+        }
+
+        .btn-outline {
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-size: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(8, 11, 30, 0.8);
+            color: #e3e7ff;
+            cursor: pointer;
+        }
+
+        .hero-side {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 12px 14px;
+            border-radius: 18px;
+            background: rgba(7, 11, 30, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hero-stat {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .hero-stat span:first-child {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .hero-stat span:last-child {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .hero-contact {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .hero-contact b {
+            color: #ffffff;
+        }
+
+        /* CARDS GENERIC */
+        .card {
+            background: var(--bg-alt);
+            border-radius: var(--radius-lg);
+            padding: 18px 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+        }
+
+        /* EXPERIENCE TIMELINE */
+        .exp-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .exp-item {
+            display: grid;
+            grid-template-columns: 80px minmax(0, 1fr);
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .exp-year {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .exp-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 12px rgba(255, 122, 60, 0.9);
+            margin-bottom: 6px;
+        }
+
+        .exp-content h3 {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .exp-meta {
+            font-size: 11px;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+
+        .exp-content ul {
+            list-style: disc;
+            padding-left: 16px;
+            font-size: 12px;
+            color: #d2d4e3;
+        }
+
+        /* SKILLS GRID */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 10px;
+        }
+
+        .skill-pill {
+            padding: 9px 10px;
+            border-radius: var(--radius-md);
+            background: rgba(12, 16, 40, 0.9);
+            border: 1px solid var(--border);
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-pill span:last-child {
+            font-size: 10px;
+            color: var(--muted);
+        }
+
+        /* PROJECTS */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 14px;
+        }
+
+        .project-card {
+            border-radius: var(--radius-md);
+            padding: 14px;
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 12px;
+        }
+
+        .project-title {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .project-tech {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .project-tag {
+            margin-top: 4px;
+            font-size: 11px;
+            color: var(--accent);
+        }
+
+        /* SERVICES */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .service-card {
+            border-radius: var(--radius-md);
+            padding: 14px;
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            font-size: 12px;
+        }
+
+        .service-card h3 {
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        /* EDUCATION */
+        .edu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .edu-item h3 {
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .edu-meta {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        /* CONTACT */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1.8fr;
+            gap: 16px;
+        }
+
+        .contact-details {
+            font-size: 13px;
+        }
+
+        .contact-details p {
+            margin-bottom: 8px;
+        }
+
+        .contact-details span {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: rgba(7, 9, 24, 0.95);
+            color: var(--text);
+            font-family: inherit;
+            font-size: 12px;
+        }
+
+        .contact-form textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            justify-self: flex-start;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 14px 16px 18px;
+            font-size: 11px;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: absolute;
+                top: 54px;
+                right: 12px;
+                padding: 10px 12px;
+                flex-direction: column;
+                background: rgba(5, 8, 22, 0.98);
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                display: none;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-cta {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1>I'm Soumyadip</h1>
-            <h2>Full Stack Developer</h2>
-            <p class="desc">
-                Experienced Full Stack Developer skilled in .NET, SQL, MVC,  
-                dashboards, REST APIs, and enterprise-grade applications.
-            </p>
-
-            <div class="stats">
-                <div><span>4+</span><p>Years Experience</p></div>
-                <div><span>12+</span><p>Major Projects</p></div>
-                <div><span>10+</span><p>Clients Served</p></div>
+    <!-- NAVBAR -->
+    <header>
+        <div class="nav-inner">
+            <div class="brand">
+                <div class="brand-logo"></div>
+                <div class="brand-text">
+                    <span>Soumyadip Ghosh</span>
+                    <span>Full Stack .NET Developer</span>
+                </div>
             </div>
+
+            <div class="nav-toggle" id="navToggle">☰</div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="nav-cta">Hire Me</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <div>
+                <h1 class="hero-heading">
+                    Hello, I'm <span>Soumyadip</span>
+                </h1>
+                <p class="hero-role">
+                    Full Stack .NET Developer • ASP.NET MVC • SQL Server • PostgreSQL
+                </p>
+                <p class="hero-text">
+                    I design and build scalable enterprise applications using .NET, SQL Server, PostgreSQL,
+                    modern web technologies and clean architecture patterns. I love turning complex business
+                    workflows into simple, reliable software.
+                </p>
+
+                <div class="hero-tags">
+                    <span class="tag-pill">.NET Core & ASP.NET MVC</span>
+                    <span class="tag-pill">REST & Web APIs</span>
+                    <span class="tag-pill">SQL Server & PostgreSQL</span>
+                    <span class="tag-pill">Dashboards & Reporting</span>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToSection('contact')">Contact Me</button>
+                    <button class="btn-outline" onclick="scrollToSection('projects')">View Projects</button>
+                </div>
+            </div>
+
+            <aside class="hero-side" aria-label="Summary">
+                <div class="hero-stat">
+                    <span>3+ yrs</span>
+                    <span>Experience</span>
+                </div>
+                <div class="hero-stat">
+                    <span>8+ apps</span>
+                    <span>Enterprise projects</span>
+                </div>
+                <div class="hero-contact">
+                    <p><b>Location:</b> Kolkata, West Bengal, India</p>
+                    <p><b>Phone:</b> +91-7063067244 / 7001404870</p>
+                    <p><b>Email:</b> soumyadipghosh640@gmail.com</p>
+                </div>
+            </aside>
+        </section>
 
         <!-- ABOUT -->
-        <section class="section">
-            <h3 class="section-tag">( 01 )</h3>
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I specialize in building scalable enterprise applications with .NET Core,  
-                SQL Server, PostgreSQL, REST APIs, Authentication systems, dashboards  
-                and high-performance backend systems. I love solving complex workflow  
-                problems and converting business logic into clean architecture.
+        <section id="about">
+            <div class="section-label">About</div>
+            <h2 class="section-title">Who I am</h2>
+            <p class="section-sub">
+                Full Stack Developer specialized in .NET technologies, SQL databases, dashboards, integrations and reporting systems.
             </p>
+            <div class="card" style="font-size: 13px; line-height: 1.7;">
+                I’ve worked on HRMS, logistics management, factory management and school management systems, along with
+                reporting and automation tools. My focus is on building stable, maintainable code with strong database design,
+                performance optimization and secure authentication/authorization.
+            </div>
         </section>
 
         <!-- EXPERIENCE -->
-        <section class="section">
-            <h3 class="section-tag">( 02 )</h3>
-            <h2 class="section-title">Experience</h2>
+        <section id="experience">
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">Work History</h2>
+            <p class="section-sub">Recent roles and responsibilities.</p>
 
-            <div class="exp-card">
-                <div class="year">2025</div>
-                <h3>Full Stack Developer — Tekknowledge Analytics</h3>
-                <p>Fulltime</p>
-                <ul>
-                    <li>HRMS module development using .NET Core & SQL Server.</li>
-                    <li>REST API integrations + performance optimization.</li>
-                </ul>
+            <div class="card">
+                <div class="exp-list">
+
+                    <div class="exp-item">
+                        <div>
+                            <div class="exp-dot"></div>
+                            <div class="exp-year">2025 – Present</div>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Full Stack Developer – Tekknowledge Analytics Services Pvt. Ltd.</h3>
+                            <div class="exp-meta">Kolkata • Full time</div>
+                            <ul>
+                                <li>Designing and enhancing HRMS modules for employee, payroll and reporting using .NET Core and SQL Server.</li>
+                                <li>Implementing secure login, role-based access, optimized queries and REST API integrations.</li>
+                                <li>Building responsive UIs with Bootstrap, JavaScript, jQuery and AJAX.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div>
+                            <div class="exp-dot"></div>
+                            <div class="exp-year">2024 – 2025</div>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Full Stack Developer – Khadim India Limited</h3>
+                            <div class="exp-meta">Kolkata • Full time</div>
+                            <ul>
+                                <li>Developed Factory Management and Reporting applications to improve production workflows.</li>
+                                <li>Implemented SQL optimization, automated file export, email notifications and dashboards.</li>
+                                <li>Used .NET Framework, Bootstrap, JavaScript, jQuery and AJAX for responsive UI.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div>
+                            <div class="exp-dot"></div>
+                            <div class="exp-year">2022 – 2023</div>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Backend Developer – Technocon Services</h3>
+                            <div class="exp-meta">Kolkata • Full time</div>
+                            <ul>
+                                <li>Designed and developed a logistics management system using ASP.NET MVC and PostgreSQL.</li>
+                                <li>Created REST APIs, dashboards, authentication & authorization, Google Map integrations.</li>
+                                <li>Managed staging & production deployments with CI/CD using GitHub Actions.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div>
+                            <div class="exp-dot"></div>
+                            <div class="exp-year">2023</div>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Career Break</h3>
+                            <div class="exp-meta">Aug 2023 – Jun 2024</div>
+                            <ul>
+                                <li>Took a planned medical break to focus on health and recovery. Back to work fully focused and committed.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="exp-card">
-                <div class="year">2024</div>
-                <h3>Full Stack Developer — Khadim India Ltd</h3>
-                <p>Fulltime</p>
-                <ul>
-                    <li>Factory Management System & Reporting Application.</li>
-                    <li>RBAC, dashboards, SQL optimization.</li>
-                </ul>
-            </div>
-
-            <div class="exp-card">
-                <div class="year">2022–23</div>
-                <h3>Backend Developer — Technocon Services</h3>
-                <p>Fulltime</p>
-                <ul>
-                    <li>Logistics Management System using .NET MVC + PostgreSQL.</li>
-                    <li>APIs, authentication, Google Map API, CI/CD.</li>
-                </ul>
-            </div>
-
         </section>
 
-        <!-- EDUCATION & SKILLS -->
-        <section class="section">
-            <h3 class="section-tag">( 03 )</h3>
-            <h2 class="section-title">Education & Skills</h2>
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="section-label">Skills</div>
+            <h2 class="section-title">Tech Stack & Tools</h2>
+            <p class="section-sub">Technologies I work with day-to-day.</p>
 
-            <div class="edu-skill">
+            <div class="card">
+                <div class="skills-grid">
+                    <div class="skill-pill">
+                        <span>.NET Core</span>
+                        <span>Backend</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>ASP.NET MVC / Web Forms</span>
+                        <span>Web</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>C#</span>
+                        <span>Language</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>SQL Server</span>
+                        <span>DB</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>PostgreSQL</span>
+                        <span>DB</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>JavaScript & jQuery</span>
+                        <span>Frontend</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>HTML / CSS / Bootstrap</span>
+                        <span>UI</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>REST & Web APIs</span>
+                        <span>Integration</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>RDLC Reports</span>
+                        <span>Reporting</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>Git & GitHub</span>
+                        <span>Version Control</span>
+                    </div>
+                    <div class="skill-pill">
+                        <span>WordPress & WooCommerce</span>
+                        <span>CMS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="edu">
-                    <h4>BCA — Vidyasagar University</h4>
-                    <p>2018 – 2021</p>
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="section-label">Projects</div>
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-sub">A snapshot of systems and applications I've worked on.</p>
 
-                    <h4>Higher Secondary — Salboni High School</h4>
-                    <p>2017 – 2018</p>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-title">Human Resource Management System (HRMS)</div>
+                    <div class="project-tech">.NET Core · SQL Server · Bootstrap · jQuery</div>
+                    <p>Employee management, payroll, attendance and reporting with secure role-based access and optimized SQL queries.</p>
+                    <div class="project-tag">Enterprise · HR</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">Reporting Application</div>
+                    <div class="project-tech">ASP.NET · RDLC · SQL Server</div>
+                    <p>Custom reporting tool with dashboards, query optimization, dynamic file export and email automation.</p>
+                    <div class="project-tag">Analytics · Automation</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">Logistics Management System</div>
+                    <div class="project-tech">ASP.NET MVC · PostgreSQL · Google Maps API</div>
+                    <p>Optimized routing, vehicle operations, tracking and reporting with secure APIs and dashboards.</p>
+                    <div class="project-tag">Logistics · Backend</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">Factory Management System</div>
+                    <div class="project-tech">ASP.NET MVC · PostgreSQL</div>
+                    <p>Production workflows, role-based dynamic menus, dashboards and analytics for factory operations.</p>
+                    <div class="project-tag">Manufacturing · Web</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">School Management System</div>
+                    <div class="project-tech">ASP.NET Web Forms · SQL Server · REST API</div>
+                    <p>Cloud-enabled system with dashboards, REST APIs, role-based menus and secure authentication.</p>
+                    <div class="project-tag">Education · Cloud</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">Business Portfolio Website</div>
+                    <div class="project-tech">WordPress · Elementor</div>
+                    <p>Responsive company website with custom layout, performance optimization and CTA design.</p>
+                    <div class="project-tag">Web · WordPress</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">E-Commerce Store</div>
+                    <div class="project-tech">WordPress · WooCommerce</div>
+                    <p>Online store setup with product listings, payment gateway integration and order tracking.</p>
+                    <div class="project-tag">E-Commerce</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">Personal Blog Website</div>
+                    <div class="project-tech">WordPress · Astra · SEO Plugins</div>
+                    <p>Blog with SEO configuration, performance tuning and social sharing integration.</p>
+                    <div class="project-tag">Content · SEO</div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services">
+            <div class="section-label">Services</div>
+            <h2 class="section-title">How I can help</h2>
+            <p class="section-sub">Services I can provide as a freelancer or full-time engineer.</p>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <h3>.NET Web Application Development</h3>
+                    <p>End-to-end development of business web apps using .NET Core, ASP.NET MVC and SQL Server with clean architecture and secure auth.</p>
                 </div>
 
-                <div class="skills">
-                    <span>.NET Core</span>
-                    <span>ASP.NET MVC</span>
-                    <span>SQL Server</span>
-                    <span>PostgreSQL</span>
-                    <span>JavaScript</span>
-                    <span>jQuery</span>
-                    <span>Bootstrap</span>
-                    <span>REST API</span>
-                    <span>Git</span>
-                    <span>WordPress</span>
+                <div class="service-card">
+                    <h3>API & Backend Development</h3>
+                    <p>Designing scalable REST APIs, database schema, query optimization and background automation for enterprise workflows.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Dashboards & Reporting</h3>
+                    <p>Building dashboards, visual reports, RDLC reporting modules and automated exports for management and analytics.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>WordPress & E-Commerce</h3>
+                    <p>Business websites, blogs and WooCommerce stores with theme customization, plugins and basic on-page SEO.</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- WORKS WITHOUT IMAGES -->
-        <section class="section">
-            <h3 class="section-tag">( 04 )</h3>
-            <h2 class="section-title">Latest Works</h2>
+        <!-- EDUCATION -->
+        <section id="education">
+            <div class="section-label">Education</div>
+            <h2 class="section-title">Background</h2>
 
-            <div class="work-card">
-                <h3>HRMS System</h3>
-                <p>Employee management, payroll & reporting.</p>
+            <div class="card">
+                <div class="edu-list">
+                    <div class="edu-item">
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <div class="edu-meta">Vidyasagar University • 2018 – 2021</div>
+                    </div>
+                    <div class="edu-item">
+                        <h3>Higher Secondary</h3>
+                        <div class="edu-meta">Salboni High School • 2017 – 2018</div>
+                    </div>
+                </div>
             </div>
-
-            <div class="work-card">
-                <h3>Factory Management System</h3>
-                <p>Production, QC, menus, RBAC.</p>
-            </div>
-
-            <div class="work-card">
-                <h3>Logistics Management System</h3>
-                <p>Routes, vehicles, API integration.</p>
-            </div>
-
-            <div class="work-card">
-                <h3>Reporting System</h3>
-                <p>RDLC reports, automation, dashboards.</p>
-            </div>
-
         </section>
 
-    </div>
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let’s work together</h2>
+            <p class="section-sub">Best way to reach me is via email or phone. You can also send a quick message from here.</p>
+
+            <div class="card contact-grid">
+                <div class="contact-details">
+                    <p><b>📍 Location:</b><br /><span>Kolkata, West Bengal, India</span></p>
+                    <p><b>📧 Email:</b><br /><span>soumyadipghosh640@gmail.com</span></p>
+                    <p><b>📱 Phone:</b><br /><span>+91-7063067244 / 7001404870</span></p>
+                    <p style="margin-top: 10px; font-size: 11px; color: var(--muted);">
+                        Looking for opportunities as a <b>Full Stack .NET Developer</b> or <b>Backend Developer</b> (remote / onsite).
+                    </p>
+                </div>
+
+                <!-- NOTE: This is a static form (no backend). You can hook it later with Formspree, etc. -->
+                <form class="contact-form" onsubmit="handleForm(event)">
+                    <input type="text" name="name" placeholder="Your name" required />
+                    <input type="email" name="email" placeholder="Your email" required />
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                    <button class="btn-primary" type="submit">Send Message</button>
+                    <span id="formStatus" style="font-size:11px; color:var(--muted);"></span>
+                </form>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        © 2025 Soumyadip Ghosh — Portfolio
+        © <span id="year"></span> · Designed & coded by Soumyadip Ghosh. All rights reserved.
     </footer>
 
-</body>
-                                                                              </html>
+    <!-- SMALL JS (IN SAME FILE) -->
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
 
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // Smooth scroll helper for buttons
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            if (navLinks.classList.contains('show')) {
+                navLinks.classList.remove('show');
+            }
+        }
+
+        // Static form handler (no backend, just UX message)
+        function handleForm(e) {
+            e.preventDefault();
+            const status = document.getElementById('formStatus');
+            status.textContent = "Thanks! This form is static right now. Please email me directly at soumyadipghosh640@gmail.com.";
+            e.target.reset();
+        }
+
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
