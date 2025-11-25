@@ -3,29 +3,27 @@
 <head>
     <!-- BASIC SEO -->
     <meta charset="UTF-8" />
-    <title>Soumyadip Ghosh | Full Stack .NET Developer in Kolkata</title>
-    <meta name="description" content="Soumyadip Ghosh is a Full Stack .NET Developer from Kolkata, skilled in .NET Core, ASP.NET MVC, SQL Server, PostgreSQL, REST APIs, dashboards, and enterprise applications." />
-    <meta name="keywords" content="Soumyadip Ghosh, Full Stack Developer, .NET Developer, ASP.NET, SQL Server, MVC Developer, Kolkata Developer, Backend Developer, Web Developer" />
+    <title>Soumyadip Ghosh | Full Stack .NET Developer for Business Applications</title>
+    <meta name="description" content="Hire Soumyadip Ghosh, a Full Stack .NET Developer from Kolkata, to build custom business applications, dashboards, and automation using .NET, SQL Server, and PostgreSQL." />
+    <meta name="keywords" content="Soumyadip Ghosh, .NET Developer, Full Stack Developer, ASP.NET, SQL Server, Freelance Developer, Kolkata, HRMS, ERP, Business Software, Web Developer" />
     <meta name="author" content="Soumyadip Ghosh" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="P45wGLmJTTt8FV_PcnPq4Wy5qXbIx-HEKff9ERmIt5w" />
-
+    <meta name="google-site-verification" content="P45wGLmJTTt8FV_PcnPq4Wy5qXbIx-HEKff9ERmIt5w" />
 
     <!-- CANONICAL -->
     <link rel="canonical" href="https://soumyadipghosh-dev.github.io" />
 
-    <!-- OPEN GRAPH (SOCIAL SHARE) -->
+    <!-- OPEN GRAPH -->
     <meta property="og:title" content="Soumyadip Ghosh | Full Stack .NET Developer" />
-    <meta property="og:description" content="Full Stack Developer specializing in .NET Core, ASP.NET MVC, SQL Server, PostgreSQL, REST APIs, dashboards and reporting systems." />
+    <meta property="og:description" content="I build custom HRMS, logistics, factory and reporting systems using .NET and SQL for small and mid-sized businesses." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://soumyadipghosh-dev.github.io" />
-    <!-- You can host an image later and put its URL here -->
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Soumyadip+Ghosh+Portfolio" />
 
     <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Soumyadip Ghosh | Full Stack .NET Developer" />
-    <meta name="twitter:description" content="Full Stack .NET Developer from Kolkata with experience in HRMS, Logistics, Factory Management, and Reporting systems." />
+    <meta name="twitter:description" content="Custom business applications and dashboards using .NET, SQL Server and PostgreSQL." />
 
     <!-- STRUCTURED DATA (SCHEMA.ORG) -->
     <script type="application/ld+json">
@@ -46,22 +44,23 @@
     }
     </script>
 
-    <!-- FONT & GLOBAL STYLES -->
+    <!-- FONT & STYLES -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
         :root {
-            --bg: #050816;
-            --bg-alt: #0b1020;
+            --bg: #f4f7fb;
+            --bg-alt: #ffffff;
+            --primary: #1b4f9c;
+            --primary-soft: rgba(27, 79, 156, 0.08);
+            --primary-strong: #0f3570;
             --accent: #ff7a3c;
-            --accent-soft: rgba(255, 122, 60, 0.12);
-            --text: #f5f5f5;
-            --muted: #a0a3b1;
-            --card: #101527;
-            --border: #20263b;
-            --shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+            --text-main: #101828;
+            --text-muted: #6b7380;
+            --border: #dde3f0;
             --radius-lg: 18px;
             --radius-md: 12px;
+            --shadow-soft: 0 10px 30px rgba(15, 53, 112, 0.1);
             --transition: 0.25s ease;
         }
 
@@ -77,13 +76,46 @@
 
         body {
             font-family: "Poppins", sans-serif;
-            background: radial-gradient(circle at top, #151b3b 0, #050816 50%, #02030a 100%);
-            color: var(--text);
+            background: linear-gradient(180deg, #eaf1fb 0%, #f4f7fb 45%, #f9fbff 100%);
+            color: var(--text-main);
         }
 
         a {
-            color: inherit;
             text-decoration: none;
+            color: inherit;
+        }
+
+        /* LAYOUT */
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-label {
+            font-size: 11px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-strong);
+        }
+
+        .section-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
         }
 
         /* NAVBAR */
@@ -91,15 +123,15 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            backdrop-filter: blur(18px);
-            background: linear-gradient(to right, rgba(5, 8, 22, 0.96), rgba(5, 8, 22, 0.82));
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            background: rgba(244, 247, 251, 0.97);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(221, 227, 240, 0.9);
         }
 
         .nav-inner {
-            max-width: 1100px;
+            max-width: 1120px;
             margin: 0 auto;
-            padding: 12px 16px;
+            padding: 10px 16px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -112,57 +144,65 @@
             gap: 10px;
         }
 
-        .brand-logo {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 20%, #ffe9d6 0, #ff7a3c 40%, #c03522 85%);
-            box-shadow: 0 0 15px rgba(255, 122, 60, 0.8);
-        }
+       .brand-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1b4f9c, #4f8df5);
+    box-shadow: 0 0 10px rgba(79, 141, 245, 0.6);
 
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.1;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+
+    text-shadow: 0 0 4px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.14);
+}
+
 
         .brand-text span:first-child {
             font-size: 16px;
             font-weight: 600;
+            color: var(--primary-strong);
         }
 
         .brand-text span:last-child {
             font-size: 11px;
-            color: var(--muted);
+            color: var(--text-muted);
         }
 
         .nav-links {
             display: flex;
-            gap: 18px;
             align-items: center;
+            gap: 16px;
+            font-size: 13px;
         }
 
         .nav-links a {
-            font-size: 13px;
-            color: var(--muted);
             padding: 6px 10px;
             border-radius: 999px;
+            color: var(--text-muted);
             transition: var(--transition);
         }
 
         .nav-links a:hover {
-            color: #ffffff;
-            background: rgba(255, 122, 60, 0.15);
+            color: var(--primary-strong);
+            background: var(--primary-soft);
         }
 
         .nav-cta {
-            border-radius: 999px;
-            padding: 7px 14px;
-            font-size: 13px;
-            background: linear-gradient(135deg, #ff7a3c, #ffb347);
-            color: #050816;
+            background: linear-gradient(135deg, #1b4f9c, #4f8df5);
+            color: #ffffff !important;
             font-weight: 600;
-            box-shadow: 0 0 18px rgba(255, 122, 60, 0.5);
+            border-radius: 999px;
+            padding: 7px 16px;
+            box-shadow: 0 8px 20px rgba(27, 79, 156, 0.3);
         }
 
         .nav-toggle {
@@ -171,88 +211,76 @@
             cursor: pointer;
         }
 
-        /* LAYOUT */
-        main {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 18px 16px 40px;
-        }
-
-        section {
-            margin-bottom: 48px;
-        }
-
-        .section-label {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            color: var(--accent);
-            margin-bottom: 6px;
-        }
-
-        .section-title {
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 14px;
-        }
-
-        .section-sub {
-            font-size: 13px;
-            color: var(--muted);
-            margin-bottom: 14px;
-        }
-
         /* HERO */
         .hero {
             display: grid;
-            grid-template-columns: 3fr 2fr;
-            gap: 28px;
+            grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
+            gap: 30px;
             align-items: center;
-            padding: 22px 18px;
-            border-radius: 22px;
-            background: radial-gradient(circle at top left, rgba(255, 122, 60, 0.25), transparent 55%),
-                        radial-gradient(circle at bottom right, rgba(76, 130, 255, 0.20), transparent 50%),
-                        linear-gradient(135deg, #070b1a, #11172a);
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(255, 255, 255, 0.04);
         }
 
-        .hero-heading {
-            font-size: 26px;
-            margin-bottom: 4px;
+        .hero-card {
+            background: var(--bg-alt);
+            border-radius: 24px;
+            padding: 24px 22px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border);
         }
 
-        .hero-heading span {
-            color: var(--accent);
-        }
-
-        .hero-role {
-            font-size: 15px;
-            color: var(--muted);
+        .hero-badge-row {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: var(--primary-soft);
+            font-size: 11px;
+            color: var(--primary-strong);
             margin-bottom: 10px;
         }
 
-        .hero-text {
-            font-size: 13px;
-            color: #d2d4e3;
-            line-height: 1.6;
-            margin-bottom: 14px;
+        .hero-badge-row span:last-child {
+            font-weight: 600;
+            margin-left: 6px;
         }
 
-        .hero-tags {
+        .hero-title {
+            font-size: 30px;
+            line-height: 1.25;
+            margin-bottom: 8px;
+            color: var(--primary-strong);
+        }
+
+        .hero-title span {
+            color: var(--primary);
+        }
+
+        .hero-subline {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .hero-desc {
+            font-size: 14px;
+            color: var(--text-main);
+            margin-bottom: 18px;
+            line-height: 1.6;
+        }
+
+        .hero-points {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
 
-        .tag-pill {
+        .hero-pill {
             font-size: 11px;
-            padding: 5px 10px;
+            padding: 6px 10px;
             border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            background: rgba(10, 14, 35, 0.6);
-            color: #e7e9ff;
+            border: 1px solid var(--border);
+            background: #f7f9fd;
+            color: var(--primary-strong);
         }
 
         .hero-actions {
@@ -262,118 +290,253 @@
         }
 
         .btn-primary {
-            border-radius: 999px;
-            padding: 8px 18px;
-            font-size: 13px;
-            background: linear-gradient(135deg, #ff7a3c, #ffb347);
-            color: #050816;
-            font-weight: 600;
             border: none;
+            outline: none;
             cursor: pointer;
-            box-shadow: 0 0 18px rgba(255, 122, 60, 0.5);
+            border-radius: 999px;
+            padding: 10px 18px;
+            font-size: 13px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #1b4f9c, #4f8df5);
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(27, 79, 156, 0.35);
         }
 
         .btn-outline {
             border-radius: 999px;
-            padding: 8px 14px;
-            font-size: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            background: rgba(8, 11, 30, 0.8);
-            color: #e3e7ff;
+            padding: 9px 16px;
+            font-size: 13px;
+            border: 1px solid var(--border);
+            background: #ffffff;
+            color: var(--primary-strong);
             cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-outline span.emoji {
+            font-size: 14px;
         }
 
         .hero-side {
             display: flex;
             flex-direction: column;
             gap: 12px;
-            padding: 12px 14px;
-            border-radius: 18px;
-            background: rgba(7, 11, 30, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .hero-stat {
+        .hero-stat-card,
+        .hero-contact-card {
+            background: var(--bg-alt);
+            border-radius: 18px;
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .hero-stat-top {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            margin-bottom: 6px;
         }
 
-        .hero-stat span:first-child {
-            font-size: 18px;
+        .hero-stat-top span:first-child {
+            font-size: 22px;
             font-weight: 600;
+            color: var(--primary-strong);
         }
 
-        .hero-stat span:last-child {
+        .hero-stat-top span:last-child {
             font-size: 11px;
-            color: var(--muted);
+            color: var(--text-muted);
         }
 
-        .hero-contact {
-            font-size: 12px;
-            color: var(--muted);
+        .hero-contact-card p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
         }
 
-        .hero-contact b {
-            color: #ffffff;
+        .hero-contact-card p b {
+            color: var(--primary-strong);
         }
 
-        /* CARDS GENERIC */
+        /* GENERIC CARDS & GRIDS */
         .card {
             background: var(--bg-alt);
             border-radius: var(--radius-lg);
-            padding: 18px 16px;
             border: 1px solid var(--border);
-            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+            box-shadow: var(--shadow-soft);
+            padding: 18px 18px;
         }
 
-        /* EXPERIENCE TIMELINE */
-        .exp-list {
-            display: flex;
-            flex-direction: column;
+        .grid-2 {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.6fr);
+            gap: 18px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 16px;
         }
 
-        .exp-item {
+        /* SERVICES (What I Do) */
+        .service-list {
             display: grid;
-            grid-template-columns: 80px minmax(0, 1fr);
-            gap: 14px;
-            align-items: flex-start;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 16px;
         }
 
-        .exp-year {
+        .service-item {
+            padding: 14px 14px 16px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: #ffffff;
+            font-size: 13px;
+        }
+
+        .service-item h3 {
+            font-size: 15px;
+            margin-bottom: 4px;
+            color: var(--primary-strong);
+        }
+
+        .service-item small {
             font-size: 11px;
-            color: var(--muted);
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 8px;
         }
 
-        .exp-dot {
-            width: 9px;
-            height: 9px;
-            border-radius: 50%;
-            background: var(--accent);
-            box-shadow: 0 0 12px rgba(255, 122, 60, 0.9);
-            margin-bottom: 6px;
-        }
-
-        .exp-content h3 {
-            font-size: 14px;
-            margin-bottom: 2px;
-        }
-
-        .exp-meta {
-            font-size: 11px;
-            color: var(--muted);
-            margin-bottom: 6px;
-        }
-
-        .exp-content ul {
-            list-style: disc;
-            padding-left: 16px;
+        .service-item ul {
+            margin-left: 18px;
             font-size: 12px;
-            color: #d2d4e3;
+            color: var(--text-muted);
         }
 
-        /* SKILLS GRID */
+        .service-item ul li {
+            margin-bottom: 4px;
+        }
+
+        /* PACKAGES / PRICING */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 16px;
+        }
+
+        .price-card {
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: #ffffff;
+            padding: 16px 16px 18px;
+            position: relative;
+        }
+
+        .price-card.featured {
+            border: 1px solid #1b4f9c;
+            box-shadow: 0 12px 28px rgba(27, 79, 156, 0.18);
+            transform: translateY(-2px);
+        }
+
+        .price-tag {
+            font-size: 11px;
+            font-weight: 600;
+            color: #0f3570;
+            background: #e6efff;
+            padding: 4px 9px;
+            border-radius: 999px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .price-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-strong);
+            margin-bottom: 4px;
+        }
+
+        .price-amount {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--primary-strong);
+        }
+
+        .price-note {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .price-features {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .price-features li {
+            margin-left: 16px;
+            margin-bottom: 4px;
+        }
+
+        .price-cta {
+            font-size: 12px;
+            color: var(--primary-strong);
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* PROJECTS */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 16px;
+        }
+
+        .project-card {
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: #ffffff;
+            padding: 14px 14px 14px;
+            font-size: 13px;
+        }
+
+        .project-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .project-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-strong);
+            margin-bottom: 4px;
+        }
+
+        .project-tech {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .project-card p {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .project-tag {
+            font-size: 11px;
+            color: var(--primary);
+            margin-top: 6px;
+        }
+
+        /* SKILLS */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -383,8 +546,8 @@
         .skill-pill {
             padding: 9px 10px;
             border-radius: var(--radius-md);
-            background: rgba(12, 16, 40, 0.9);
             border: 1px solid var(--border);
+            background: #ffffff;
             font-size: 12px;
             display: flex;
             justify-content: space-between;
@@ -393,99 +556,80 @@
 
         .skill-pill span:last-child {
             font-size: 10px;
-            color: var(--muted);
+            color: var(--text-muted);
         }
 
-        /* PROJECTS */
-        .projects-grid {
+        /* TESTIMONIALS */
+        .testimonial-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-            gap: 14px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
         }
 
-        .project-card {
+        .testimonial-card {
             border-radius: var(--radius-md);
-            padding: 14px;
-            background: var(--bg-alt);
             border: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            font-size: 12px;
-        }
-
-        .project-title {
+            background: #ffffff;
+            padding: 14px 16px;
             font-size: 13px;
-            font-weight: 500;
         }
 
-        .project-tech {
-            font-size: 11px;
-            color: var(--muted);
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 8px;
         }
 
-        .project-tag {
-            margin-top: 4px;
-            font-size: 11px;
-            color: var(--accent);
-        }
-
-        /* SERVICES */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 14px;
-        }
-
-        .service-card {
-            border-radius: var(--radius-md);
-            padding: 14px;
-            background: var(--bg-alt);
-            border: 1px solid var(--border);
-            font-size: 12px;
-        }
-
-        .service-card h3 {
+        .testimonial-author {
             font-size: 13px;
-            margin-bottom: 6px;
+            font-weight: 600;
+            color: var(--primary-strong);
         }
 
-        /* EDUCATION */
-        .edu-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            font-size: 12px;
-        }
-
-        .edu-item h3 {
-            font-size: 13px;
-            margin-bottom: 2px;
-        }
-
-        .edu-meta {
-            color: var(--muted);
+        .testimonial-role {
             font-size: 11px;
+            color: var(--text-muted);
         }
 
         /* CONTACT */
         .contact-grid {
             display: grid;
-            grid-template-columns: 1.2fr 1.8fr;
-            gap: 16px;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr);
+            gap: 18px;
         }
 
-        .contact-details {
+        .contact-info p {
             font-size: 13px;
+            margin-bottom: 6px;
+            color: var(--text-main);
         }
 
-        .contact-details p {
-            margin-bottom: 8px;
-        }
-
-        .contact-details span {
-            color: var(--muted);
+        .contact-info span {
             font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .contact-cta-row {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .contact-quick {
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border-radius: 999px;
+            padding: 7px 12px;
+            background: #ffffff;
+            border: 1px solid var(--border);
+            cursor: pointer;
+        }
+
+        .contact-quick span.icon {
+            font-size: 15px;
         }
 
         .contact-form {
@@ -497,45 +641,60 @@
         .contact-form input,
         .contact-form textarea {
             width: 100%;
-            padding: 8px 10px;
-            border-radius: 8px;
+            border-radius: 10px;
             border: 1px solid var(--border);
-            background: rgba(7, 9, 24, 0.95);
-            color: var(--text);
-            font-family: inherit;
+            padding: 8px 10px;
             font-size: 12px;
+            font-family: inherit;
+            background: #ffffff;
+            color: var(--text-main);
         }
 
         .contact-form textarea {
-            min-height: 80px;
+            min-height: 90px;
             resize: vertical;
-        }
-
-        .contact-form button {
-            justify-self: flex-start;
         }
 
         /* FOOTER */
         footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-top: 1px solid var(--border);
             padding: 14px 16px 18px;
             font-size: 11px;
-            color: var(--muted);
+            color: var(--text-muted);
             text-align: center;
         }
 
-        /* MOBILE */
+        footer a {
+            color: var(--primary-strong);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 position: absolute;
-                top: 54px;
+                top: 52px;
                 right: 12px;
-                padding: 10px 12px;
                 flex-direction: column;
-                background: rgba(5, 8, 22, 0.98);
+                background: #ffffff;
+                padding: 10px 12px;
                 border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.04);
+                border: 1px solid var(--border);
                 display: none;
+                box-shadow: 0 12px 26px rgba(15, 53, 112, 0.16);
             }
 
             .nav-links.show {
@@ -550,14 +709,6 @@
                 width: 100%;
                 text-align: center;
             }
-
-            .hero {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -567,214 +718,204 @@
     <header>
         <div class="nav-inner">
             <div class="brand">
-                <div class="brand-logo"></div>
+                <div class="brand-logo">SG</div>
                 <div class="brand-text">
                     <span>Soumyadip Ghosh</span>
-                    <span>Full Stack .NET Developer</span>
+                    <span>.NET & SQL for business apps</span>
                 </div>
             </div>
 
             <div class="nav-toggle" id="navToggle">☰</div>
 
             <nav class="nav-links" id="navLinks">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
                 <a href="#services">Services</a>
+                <a href="#packages">Packages</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="#contact" class="nav-cta">Hire Me</a>
+                <a href="#contact" class="nav-cta">Book a Free Call</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="container">
 
         <!-- HERO -->
-        <section class="hero" id="top">
-            <div>
-                <h1 class="hero-heading">
-                    Hello, I'm <span>Soumyadip</span>
-                </h1>
-                <p class="hero-role">
-                    Full Stack .NET Developer • ASP.NET MVC • SQL Server • PostgreSQL
-                </p>
-                <p class="hero-text">
-                    I design and build scalable enterprise applications using .NET, SQL Server, PostgreSQL,
-                    modern web technologies and clean architecture patterns. I love turning complex business
-                    workflows into simple, reliable software.
-                </p>
+        <section id="top">
+            <div class="hero">
+                <div class="hero-card">
+                    <div class="hero-badge-row">
+                        <span>✅ Available for freelance & remote roles</span>
+                        <span>.NET · SQL · Dashboards</span>
+                    </div>
+                    <h1 class="hero-title">
+                        I build <span>custom business software</span><br />with .NET & SQL.
+                    </h1>
+                    <p class="hero-subline">
+                        For HR, factory, logistics & operations teams who want less manual work and more automation.
+                    </p>
+                    <p class="hero-desc">
+                        I help small and mid-sized businesses design and build reliable web applications, dashboards and
+                        reporting tools using <b>.NET, SQL Server, PostgreSQL</b> and modern web technologies.
+                    </p>
 
-                <div class="hero-tags">
-                    <span class="tag-pill">.NET Core & ASP.NET MVC</span>
-                    <span class="tag-pill">REST & Web APIs</span>
-                    <span class="tag-pill">SQL Server & PostgreSQL</span>
-                    <span class="tag-pill">Dashboards & Reporting</span>
+                    <div class="hero-points">
+                        <span class="hero-pill">3+ years building enterprise apps</span>
+                        <span class="hero-pill">HRMS · Factory · Logistics · School ERP</span>
+                        <span class="hero-pill">Performance-focused database design</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="scrollToSection('contact')">
+                            Discuss your project (Free)
+                        </button>
+                        <button class="btn-outline" onclick="scrollToSection('projects')">
+                            <span class="emoji">📂</span> View past work
+                        </button>
+                    </div>
                 </div>
 
-                <div class="hero-actions">
-                    <button class="btn-primary" onclick="scrollToSection('contact')">Contact Me</button>
-                    <button class="btn-outline" onclick="scrollToSection('projects')">View Projects</button>
+                <div class="hero-side">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-top">
+                            <span>3+ years</span>
+                            <span>Professional experience</span>
+                        </div>
+                        <p style="font-size:12px;color:var(--text-muted);">
+                            Working on HRMS, logistics, factory management and reporting systems in real, production
+                            environments.
+                        </p>
+                    </div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-top">
+                            <span>8+ apps</span>
+                            <span>Enterprise projects</span>
+                        </div>
+                        <p style="font-size:12px;color:var(--text-muted);">
+                            Applications used daily by employees & management teams to run operations and take decisions.
+                        </p>
+                    </div>
+                    <div class="hero-contact-card">
+                        <p><b>📍 Based in:</b> Kolkata, West Bengal, India</p>
+                        <p><b>📧 Email:</b> soumyadipghosh640@gmail.com</p>
+                        <p><b>📱 Phone:</b> +91-7063067244 / 7001404870</p>
+                        <p style="font-size:11px;margin-top:6px;">
+                            Looking for work as <b>Full Stack .NET Developer</b>, <b>Backend Developer</b>, or long-term freelance partner.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <aside class="hero-side" aria-label="Summary">
-                <div class="hero-stat">
-                    <span>3+ yrs</span>
-                    <span>Experience</span>
-                </div>
-                <div class="hero-stat">
-                    <span>8+ apps</span>
-                    <span>Enterprise projects</span>
-                </div>
-                <div class="hero-contact">
-                    <p><b>Location:</b> Kolkata, West Bengal, India</p>
-                    <p><b>Phone:</b> +91-7063067244 / 7001404870</p>
-                    <p><b>Email:</b> soumyadipghosh640@gmail.com</p>
-                </div>
-            </aside>
         </section>
 
-        <!-- ABOUT -->
-        <section id="about">
-            <div class="section-label">About</div>
-            <h2 class="section-title">Who I am</h2>
+        <!-- SERVICES (What I Do) -->
+        <section id="services">
+            <div class="section-label">Services</div>
+            <h2 class="section-title">What I can build for your business</h2>
             <p class="section-sub">
-                Full Stack Developer specialized in .NET technologies, SQL databases, dashboards, integrations and reporting systems.
+                I help you move your manual, Excel-based or outdated systems into clean, web-based applications.
             </p>
-            <div class="card" style="font-size: 13px; line-height: 1.7;">
-                I’ve worked on HRMS, logistics management, factory management and school management systems, along with
-                reporting and automation tools. My focus is on building stable, maintainable code with strong database design,
-                performance optimization and secure authentication/authorization.
-            </div>
-        </section>
 
-        <!-- EXPERIENCE -->
-        <section id="experience">
-            <div class="section-label">Experience</div>
-            <h2 class="section-title">Work History</h2>
-            <p class="section-sub">Recent roles and responsibilities.</p>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Custom .NET Business Applications</h3>
+                    <small>.NET Core · ASP.NET MVC · SQL Server · PostgreSQL</small>
+                    <ul>
+                        <li>HR, attendance, payroll & approvals</li>
+                        <li>Factory / shop floor workflow systems</li>
+                        <li>School / education management modules</li>
+                        <li>Role-based access and secure login</li>
+                    </ul>
+                </div>
 
-            <div class="card">
-                <div class="exp-list">
+                <div class="service-item">
+                    <h3>APIs, Integrations & Automation</h3>
+                    <small>REST APIs · Background jobs · Integrations</small>
+                    <ul>
+                        <li>REST APIs for mobile apps & other systems</li>
+                        <li>File import, export (Excel / PDF) & email automation</li>
+                        <li>Google Maps & 3rd party integrations</li>
+                        <li>Performance-optimized queries & stored procedures</li>
+                    </ul>
+                </div>
 
-                    <div class="exp-item">
-                        <div>
-                            <div class="exp-dot"></div>
-                            <div class="exp-year">2025 – Present</div>
-                        </div>
-                        <div class="exp-content">
-                            <h3>Full Stack Developer – Tekknowledge Analytics Services Pvt. Ltd.</h3>
-                            <div class="exp-meta">Kolkata • Full time</div>
-                            <ul>
-                                <li>Designing and enhancing HRMS modules for employee, payroll and reporting using .NET Core and SQL Server.</li>
-                                <li>Implementing secure login, role-based access, optimized queries and REST API integrations.</li>
-                                <li>Building responsive UIs with Bootstrap, JavaScript, jQuery and AJAX.</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="service-item">
+                    <h3>Dashboards & Reporting</h3>
+                    <small>RDLC · Custom dashboards · Management reports</small>
+                    <ul>
+                        <li>Custom dashboards for HR, operations & finance</li>
+                        <li>RDLC & SQL-based reporting modules</li>
+                        <li>Scheduled report emails & exports</li>
+                        <li>Data visibility for managers & stakeholders</li>
+                    </ul>
+                </div>
 
-                    <div class="exp-item">
-                        <div>
-                            <div class="exp-dot"></div>
-                            <div class="exp-year">2024 – 2025</div>
-                        </div>
-                        <div class="exp-content">
-                            <h3>Full Stack Developer – Khadim India Limited</h3>
-                            <div class="exp-meta">Kolkata • Full time</div>
-                            <ul>
-                                <li>Developed Factory Management and Reporting applications to improve production workflows.</li>
-                                <li>Implemented SQL optimization, automated file export, email notifications and dashboards.</li>
-                                <li>Used .NET Framework, Bootstrap, JavaScript, jQuery and AJAX for responsive UI.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="exp-item">
-                        <div>
-                            <div class="exp-dot"></div>
-                            <div class="exp-year">2022 – 2023</div>
-                        </div>
-                        <div class="exp-content">
-                            <h3>Backend Developer – Technocon Services</h3>
-                            <div class="exp-meta">Kolkata • Full time</div>
-                            <ul>
-                                <li>Designed and developed a logistics management system using ASP.NET MVC and PostgreSQL.</li>
-                                <li>Created REST APIs, dashboards, authentication & authorization, Google Map integrations.</li>
-                                <li>Managed staging & production deployments with CI/CD using GitHub Actions.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="exp-item">
-                        <div>
-                            <div class="exp-dot"></div>
-                            <div class="exp-year">2023</div>
-                        </div>
-                        <div class="exp-content">
-                            <h3>Career Break</h3>
-                            <div class="exp-meta">Aug 2023 – Jun 2024</div>
-                            <ul>
-                                <li>Took a planned medical break to focus on health and recovery. Back to work fully focused and committed.</li>
-                            </ul>
-                        </div>
-                    </div>
-
+                <div class="service-item">
+                    <h3>Websites & E-Commerce (WordPress)</h3>
+                    <small>WordPress · WooCommerce</small>
+                    <ul>
+                        <li>Company websites & landing pages</li>
+                        <li>Online product catalogs & basic e-commerce</li>
+                        <li>Theme customization & plugin setup</li>
+                        <li>Basic on-page SEO & performance tweaks</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- SKILLS -->
-        <section id="skills">
-            <div class="section-label">Skills</div>
-            <h2 class="section-title">Tech Stack & Tools</h2>
-            <p class="section-sub">Technologies I work with day-to-day.</p>
+        <!-- PACKAGES -->
+        <section id="packages">
+            <div class="section-label">Packages</div>
+            <h2 class="section-title">Flexible engagement options</h2>
+            <p class="section-sub">
+                These packages give a rough idea. After a short call, I can send a fixed quote based on your exact requirements.
+            </p>
 
-            <div class="card">
-                <div class="skills-grid">
-                    <div class="skill-pill">
-                        <span>.NET Core</span>
-                        <span>Backend</span>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-tag">Best for small teams</div>
+                    <div class="price-title">Starter Automation</div>
+                    <div class="price-amount">₹15,000 – ₹30,000</div>
+                    <div class="price-note">One small module or internal tool.</div>
+                    <ul class="price-features">
+                        <li>Single module (e.g. attendance, lead tracker)</li>
+                        <li>Simple dashboard & basic reports</li>
+                        <li>Up to 2 user roles</li>
+                        <li>Delivery in 1–2 weeks</li>
+                    </ul>
+                    <div class="price-cta" onclick="scrollToSection('contact')">
+                        → Start with a small module
                     </div>
-                    <div class="skill-pill">
-                        <span>ASP.NET MVC / Web Forms</span>
-                        <span>Web</span>
+                </div>
+
+                <div class="price-card featured">
+                    <div class="price-tag">Most popular</div>
+                    <div class="price-title">Business App</div>
+                    <div class="price-amount">₹35,000 – ₹80,000</div>
+                    <div class="price-note">For growing SMEs who want to replace Excel or manual work.</div>
+                    <ul class="price-features">
+                        <li>2–4 modules (e.g. HRMS, factory, logistics)</li>
+                        <li>Custom dashboards & multi-level approvals</li>
+                        <li>Role-based access, notifications & exports</li>
+                        <li>Delivery in 3–6 weeks</li>
+                    </ul>
+                    <div class="price-cta" onclick="scrollToSection('contact')">
+                        → Book a free 30-minute consultation
                     </div>
-                    <div class="skill-pill">
-                        <span>C#</span>
-                        <span>Language</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>SQL Server</span>
-                        <span>DB</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>PostgreSQL</span>
-                        <span>DB</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>JavaScript & jQuery</span>
-                        <span>Frontend</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>HTML / CSS / Bootstrap</span>
-                        <span>UI</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>REST & Web APIs</span>
-                        <span>Integration</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>RDLC Reports</span>
-                        <span>Reporting</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>Git & GitHub</span>
-                        <span>Version Control</span>
-                    </div>
-                    <div class="skill-pill">
-                        <span>WordPress & WooCommerce</span>
-                        <span>CMS</span>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-tag">For long-term work</div>
+                    <div class="price-title">Part-time / Dedicated</div>
+                    <div class="price-amount">Monthly / Hourly</div>
+                    <div class="price-note">Ongoing development & maintenance.</div>
+                    <ul class="price-features">
+                        <li>Work with your in-house team</li>
+                        <li>New features, bug fixes & optimizations</li>
+                        <li>Code reviews & database improvements</li>
+                        <li>Flexible engagement model</li>
+                    </ul>
+                    <div class="price-cta" onclick="scrollToSection('contact')">
+                        → Tell me what your team needs
                     </div>
                 </div>
             </div>
@@ -783,116 +924,161 @@
         <!-- PROJECTS -->
         <section id="projects">
             <div class="section-label">Projects</div>
-            <h2 class="section-title">Selected Work</h2>
-            <p class="section-sub">A snapshot of systems and applications I've worked on.</p>
+            <h2 class="section-title">Selected work & experience</h2>
+            <p class="section-sub">
+                A snapshot of the systems I've worked on in different companies and environments.
+            </p>
 
             <div class="projects-grid">
-
                 <article class="project-card">
+                    <div class="project-label">HR & Payroll</div>
                     <div class="project-title">Human Resource Management System (HRMS)</div>
                     <div class="project-tech">.NET Core · SQL Server · Bootstrap · jQuery</div>
-                    <p>Employee management, payroll, attendance and reporting with secure role-based access and optimized SQL queries.</p>
-                    <div class="project-tag">Enterprise · HR</div>
+                    <p>Employee management, attendance, payroll & reporting with role-based access and optimized SQL queries.</p>
+                    <div class="project-tag">Used by HR & management teams.</div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-title">Reporting Application</div>
+                    <div class="project-label">Analytics</div>
+                    <div class="project-title">Reporting & Dashboard Application</div>
                     <div class="project-tech">ASP.NET · RDLC · SQL Server</div>
-                    <p>Custom reporting tool with dashboards, query optimization, dynamic file export and email automation.</p>
-                    <div class="project-tag">Analytics · Automation</div>
+                    <p>Custom reporting tool with dashboards, parameterized reports, exports and email automation.</p>
+                    <div class="project-tag">Management decision support.</div>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-label">Logistics</div>
                     <div class="project-title">Logistics Management System</div>
                     <div class="project-tech">ASP.NET MVC · PostgreSQL · Google Maps API</div>
-                    <p>Optimized routing, vehicle operations, tracking and reporting with secure APIs and dashboards.</p>
-                    <div class="project-tag">Logistics · Backend</div>
+                    <p>Vehicle operations, routing, trip monitoring and reporting with secure APIs and dashboards.</p>
+                    <div class="project-tag">Operational efficiency & tracking.</div>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-label">Factory</div>
                     <div class="project-title">Factory Management System</div>
                     <div class="project-tech">ASP.NET MVC · PostgreSQL</div>
-                    <p>Production workflows, role-based dynamic menus, dashboards and analytics for factory operations.</p>
-                    <div class="project-tag">Manufacturing · Web</div>
+                    <p>Production workflows, approvals, shop floor data, dashboards and analytics for factory operations.</p>
+                    <div class="project-tag">Improved production visibility.</div>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-label">Education</div>
                     <div class="project-title">School Management System</div>
                     <div class="project-tech">ASP.NET Web Forms · SQL Server · REST API</div>
-                    <p>Cloud-enabled system with dashboards, REST APIs, role-based menus and secure authentication.</p>
-                    <div class="project-tag">Education · Cloud</div>
+                    <p>Cloud-enabled system with dashboards, role-based menus, REST APIs and secure authentication.</p>
+                    <div class="project-tag">Multi-branch ready.</div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-title">Business Portfolio Website</div>
-                    <div class="project-tech">WordPress · Elementor</div>
-                    <p>Responsive company website with custom layout, performance optimization and CTA design.</p>
-                    <div class="project-tag">Web · WordPress</div>
+                    <div class="project-label">Web</div>
+                    <div class="project-title">WordPress & WooCommerce Sites</div>
+                    <div class="project-tech">WordPress · Elementor · WooCommerce</div>
+                    <p>Business portfolio sites, product catalogs and simple e-commerce with on-page SEO and performance tweaks.</p>
+                    <div class="project-tag">Online presence & branding.</div>
                 </article>
-
-                <article class="project-card">
-                    <div class="project-title">E-Commerce Store</div>
-                    <div class="project-tech">WordPress · WooCommerce</div>
-                    <p>Online store setup with product listings, payment gateway integration and order tracking.</p>
-                    <div class="project-tag">E-Commerce</div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-title">Personal Blog Website</div>
-                    <div class="project-tech">WordPress · Astra · SEO Plugins</div>
-                    <p>Blog with SEO configuration, performance tuning and social sharing integration.</p>
-                    <div class="project-tag">Content · SEO</div>
-                </article>
-
             </div>
         </section>
 
-        <!-- SERVICES -->
-        <section id="services">
-            <div class="section-label">Services</div>
-            <h2 class="section-title">How I can help</h2>
-            <p class="section-sub">Services I can provide as a freelancer or full-time engineer.</p>
+        <!-- ABOUT & SKILLS -->
+        <section id="about">
+            <div class="section-label">About</div>
+            <h2 class="section-title">Who I am</h2>
+            <p class="section-sub">
+                Full Stack .NET Developer with experience in building real-world enterprise systems for HR, logistics,
+                factory and education domains.
+            </p>
 
-            <div class="services-grid">
-
-                <div class="service-card">
-                    <h3>.NET Web Application Development</h3>
-                    <p>End-to-end development of business web apps using .NET Core, ASP.NET MVC and SQL Server with clean architecture and secure auth.</p>
+            <div class="grid-2">
+                <div class="card">
+                    <p style="font-size:13px; line-height:1.8; margin-bottom:10px;">
+                        I started my journey in software development with a strong focus on <b>.NET and SQL databases</b>.
+                        Over the last few years, I've worked with companies in Kolkata to build and maintain applications
+                        that are actually used every day by employees and management.
+                    </p>
+                    <p style="font-size:13px; line-height:1.8; margin-bottom:10px;">
+                        My strengths are:
+                        <br />
+                        <b>• Converting complex business rules into clean, maintainable code</b><br />
+                        <b>• Designing efficient database structures and queries</b><br />
+                        <b>• Building dashboards and reports that decision-makers actually use</b>
+                    </p>
+                    <p style="font-size:13px; line-height:1.8;">
+                        If you want a developer who understands both <b>business needs</b> and <b>technical details</b>,
+                        I’d be happy to discuss your project.
+                    </p>
                 </div>
 
-                <div class="service-card">
-                    <h3>API & Backend Development</h3>
-                    <p>Designing scalable REST APIs, database schema, query optimization and background automation for enterprise workflows.</p>
-                </div>
+                <div class="card">
+                    <h3 style="font-size:15px; margin-bottom:8px; color:var(--primary-strong);">Tech stack & tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-pill">
+                            <span>.NET Core</span><span>Backend</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>ASP.NET MVC / Web Forms</span><span>Web</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>C#</span><span>Language</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>SQL Server</span><span>DB</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>PostgreSQL</span><span>DB</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>JavaScript & jQuery</span><span>Frontend</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>HTML / CSS / Bootstrap</span><span>UI</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>REST & Web APIs</span><span>Integration</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>RDLC Reports</span><span>Reporting</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>Git & GitHub</span><span>Version control</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span>WordPress & WooCommerce</span><span>CMS</span>
+                        </div>
+                    </div>
 
-                <div class="service-card">
-                    <h3>Dashboards & Reporting</h3>
-                    <p>Building dashboards, visual reports, RDLC reporting modules and automated exports for management and analytics.</p>
+                    <h3 style="font-size:15px; margin:16px 0 6px; color:var(--primary-strong);">Education</h3>
+                    <p style="font-size:12px; margin-bottom:3px;"><b>Bachelor of Computer Applications (BCA)</b></p>
+                    <p style="font-size:11px; color:var(--text-muted); margin-bottom:8px;">Vidyasagar University · 2018 – 2021</p>
+                    <p style="font-size:12px; margin-bottom:3px;"><b>Higher Secondary</b></p>
+                    <p style="font-size:11px; color:var(--text-muted);">Salboni High School · 2017 – 2018</p>
                 </div>
-
-                <div class="service-card">
-                    <h3>WordPress & E-Commerce</h3>
-                    <p>Business websites, blogs and WooCommerce stores with theme customization, plugins and basic on-page SEO.</p>
-                </div>
-
             </div>
         </section>
 
-        <!-- EDUCATION -->
-        <section id="education">
-            <div class="section-label">Education</div>
-            <h2 class="section-title">Background</h2>
+        <!-- TESTIMONIALS (Placeholder - you can update later) -->
+        <section id="testimonials">
+            <div class="section-label">Testimonials</div>
+            <h2 class="section-title">What clients & teams can expect</h2>
+            <p class="section-sub">
+                These are example statements. You can replace them later with real feedback from managers or clients.
+            </p>
 
-            <div class="card">
-                <div class="edu-list">
-                    <div class="edu-item">
-                        <h3>Bachelor of Computer Applications (BCA)</h3>
-                        <div class="edu-meta">Vidyasagar University • 2018 – 2021</div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        “Soumyadip understands requirements quickly and converts them into working modules without much follow-up. His work on our HR and reporting modules reduced manual effort significantly.”
                     </div>
-                    <div class="edu-item">
-                        <h3>Higher Secondary</h3>
-                        <div class="edu-meta">Salboni High School • 2017 – 2018</div>
+                    <div class="testimonial-author">HR / Operations Team</div>
+                    <div class="testimonial-role">Enterprise HRMS & reporting</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        “Clean coding style, well-structured SQL, and attention to edge cases. He is dependable and handles both development and bug fixing calmly, even under pressure.”
                     </div>
+                    <div class="testimonial-author">Tech Lead / Manager</div>
+                    <div class="testimonial-role">.NET & SQL projects</div>
                 </div>
             </div>
         </section>
@@ -900,37 +1086,60 @@
         <!-- CONTACT -->
         <section id="contact">
             <div class="section-label">Contact</div>
-            <h2 class="section-title">Let’s work together</h2>
-            <p class="section-sub">Best way to reach me is via email or phone. You can also send a quick message from here.</p>
+            <h2 class="section-title">Let’s talk about your project</h2>
+            <p class="section-sub">
+                Share a bit about what you’re trying to build or improve. I usually reply within 24 hours.
+            </p>
 
             <div class="card contact-grid">
-                <div class="contact-details">
-                    <p><b>📍 Location:</b><br /><span>Kolkata, West Bengal, India</span></p>
-                    <p><b>📧 Email:</b><br /><span>soumyadipghosh640@gmail.com</span></p>
-                    <p><b>📱 Phone:</b><br /><span>+91-7063067244 / 7001404870</span></p>
-                    <p style="margin-top: 10px; font-size: 11px; color: var(--muted);">
-                        Looking for opportunities as a <b>Full Stack .NET Developer</b> or <b>Backend Developer</b> (remote / onsite).
+                <div class="contact-info">
+                    <p><b>📍 Location</b><br /><span>Kolkata, West Bengal, India</span></p>
+                    <p><b>📧 Email</b><br /><span><a href="mailto:soumyadipghosh640@gmail.com">soumyadipghosh640@gmail.com</a></span></p>
+                    <p><b>📱 Phone</b><br /><span><a href="tel:+917063067244">+91-7063067244</a> / <a href="tel:+917001404870">7001404870</a></span></p>
+
+                    <div class="contact-cta-row">
+                        <a class="contact-quick" href="https://api.whatsapp.com/send?phone=917063067244&text=Hi%20Soumyadip,%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">
+                            <span class="icon">💬</span> WhatsApp me
+                        </a>
+                        <a class="contact-quick" href="tel:+917063067244">
+                            <span class="icon">📞</span> Call now
+                        </a>
+                        <button class="contact-quick" type="button" onclick="scrollToSection('packages')">
+                            <span class="icon">📦</span> View packages
+                        </button>
+                    </div>
+
+                    <p style="font-size:11px; color:var(--text-muted); margin-top:12px;">
+                        Open to: freelance projects, remote roles and long-term collaboration with product or service companies.
                     </p>
                 </div>
+                <form class="contact-form" id="contactForm">
 
-                <!-- NOTE: This is a static form (no backend). You can hook it later with Formspree, etc. -->
-                <form class="contact-form" onsubmit="handleForm(event)">
-                    <input type="text" name="name" placeholder="Your name" required />
-                    <input type="email" name="email" placeholder="Your email" required />
-                    <textarea name="message" placeholder="Your message" required></textarea>
-                    <button class="btn-primary" type="submit">Send Message</button>
-                    <span id="formStatus" style="font-size:11px; color:var(--muted);"></span>
-                </form>
-            </div>
+    <input type="hidden" name="access_key" value="6d6f7130-3c71-48ca-b4ad-efb117ed0d71">
+
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <input type="text" name="company" placeholder="Company / organization (optional)" />
+    <textarea name="message" placeholder="Briefly describe what you want to build or improve." required></textarea>
+
+    <button class="btn-primary" type="submit">Send message</button>
+
+    <span id="formStatus" style="font-size:11px; color:var(--text-muted);"></span>
+</form>
+
+
+             
+                        </div>
         </section>
 
     </main>
 
     <footer>
-        © <span id="year"></span> · Designed & coded by Soumyadip Ghosh. All rights reserved.
+        © <span id="year"></span> · Designed & built by <b>Soumyadip Ghosh</b>. 
+        Need help with a project? <a href="#contact">Get in touch</a>.
     </footer>
 
-    <!-- SMALL JS (IN SAME FILE) -->
+    <!-- JS -->
     <script>
         // Mobile nav toggle
         const navToggle = document.getElementById('navToggle');
@@ -940,7 +1149,7 @@
             navLinks.classList.toggle('show');
         });
 
-        // Smooth scroll helper for buttons
+        // Smooth scroll helper
         function scrollToSection(id) {
             const el = document.getElementById(id);
             if (el) {
@@ -951,18 +1160,42 @@
             }
         }
 
-        // Static form handler (no backend, just UX message)
+        // Static form handler (no backend yet)
         function handleForm(e) {
             e.preventDefault();
             const status = document.getElementById('formStatus');
-            status.textContent = "Thanks! This form is static right now. Please email me directly at soumyadipghosh640@gmail.com.";
+            status.textContent = "Thanks! This form is static for now. Please email me directly at soumyadipghosh640@gmail.com.";
             e.target.reset();
         }
 
         // Footer year
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        
+document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const statusEl = document.getElementById('formStatus');
+    statusEl.textContent = "Sending message...";
+
+    let data = new FormData(this);
+
+    let response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: data
+    });
+
+    let result = await response.json();
+
+    if (result.success) {
+        statusEl.textContent = "Thanks! Your message has been sent successfully.";
+        this.reset();
+    } else {
+        statusEl.textContent = "Error! Please try again later.";
+    }
+});
+
+
     </script>
 </body>
 </html>
-
-
